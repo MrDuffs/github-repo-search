@@ -1,0 +1,98 @@
+.repositories {
+
+}
+
+.repositories__container {
+  width: 768px;
+  min-height: 365px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+
+
+  .title {
+    margin-bottom: 20px;
+  }
+}
+
+.content {
+  flex: 1;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background: #f8f8f8;
+  border-radius: 10px;
+
+  .content__empty-list {
+    text-align: center;
+    font-size: 18px;
+    opacity: 0.5;
+  }
+
+  .content__no-repos {
+    text-align: center;
+    font-size: 18px;
+    opacity: 0.5;
+  }
+}
+
+.repo-body {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-bottom: 1px solid #c4c4c4;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .repo-body__name {
+    .repo-link {
+      color: #0969da;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .repo-body__description {
+    font-size: 15px;
+
+    em {
+      color: #595959;
+      font-size: 14px;
+    }
+  }
+
+  .footer {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-size: 14px;
+    color: #595959;
+
+    &__stars {
+      display: flex;
+      align-items: center;
+
+      svg path {
+        fill: #eecd00;
+      }
+    }
+    &__created {
+      font-style: italic;
+    }
+    &__pushed {
+      font-style: italic;
+    }
+
+  }
+}
