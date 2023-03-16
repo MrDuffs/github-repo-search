@@ -5,7 +5,7 @@ export function getFormattedTime(time) {
         'Апр', 'Мая', 'Июня', 'Июля',
         'Авг', 'Сент', 'Окт', 'Нояб', 'Дек'
     ];
-    let formattedTime = '';
+    let formattedTime;
 
     let year = date.getFullYear();
     let month = months[date.getMonth()];
